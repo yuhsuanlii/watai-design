@@ -1,0 +1,373 @@
+body {
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    /* font-family: Microsoft JhengHei; */
+    font-family: Bahnschrift;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 10;
+    justify-content: flex-end;
+    flex: auto;
+}
+
+.header {
+    width: min(90%, 1200px);
+    /* height: 50px; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 220px;
+    height: 75px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+#current-time {
+    color: gray;
+    font-size: 16px;
+    margin-right: 15px;
+    line-height: 30px;
+    font-family: Bahnschrift;
+}
+
+.lang {
+    background-color: #3d3c41;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.main {
+    width: min(90%, 1200px);
+    /* background-color: antiquewhite; */
+    margin: auto;
+}
+
+.title {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.titleImg {
+    width: 90%;
+    max-width: 900px;
+    max-height: 600px;
+}
+
+.carsTop {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.here {
+    position: absolute;
+    font-size: 22px;
+    color: #ffffff;
+    left: 37%;
+    top: 250px;
+}
+
+.choose {
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    right: 28%;
+    top: 220px;
+}
+
+.carsImg {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 600px;
+}
+
+.carsMiddle {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    position: relative;
+    margin-top: -15%;
+}
+
+.carsMiddleLeftImg {
+    width: 95%;
+}
+
+.carsMiddleRightImg {
+    padding-top: 10px;
+    width: 95%;
+    max-height: 600px;
+}
+
+.login {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 330px;
+    margin-top: -120px;
+    margin-left: 35%;
+}
+
+.input {
+    z-index: 10;
+    animation: slide-up 1s ease-out;
+}
+
+.account,
+.password {
+    width: 200px;
+    padding: 3px;
+    padding-left: 8px;
+    margin: 6px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.wholeBtn{
+    animation: slide-up 1s ease-out;
+}
+
+.btn {
+    position: relative;
+    z-index: 10;
+    margin-left: -10px;
+    margin-top: 3px;
+}
+
+.btnTitle {
+    position: relative;
+    top: -50px;
+    left: -5px;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.btnTitle:hover{
+    cursor: pointer;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.carsBottom {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.car10 {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    animation: slide-up 1s ease-out;
+}
+
+.car06 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    animation: slide-up 1s ease-out;
+}
+
+.car05 {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    animation: slide-up 1s ease-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.carsImg:hover,
+.carsMiddleLeftImg:hover,
+.carsMiddleRightImg:hover{
+    animation: jump 0.2s infinite alternate;
+}
+
+.title{
+    animation: jump 0.5s infinite alternate;
+}
+
+@keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+
+.mic {
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    width: 190px;
+    height: 70px;
+    background: linear-gradient(-45deg, #c9e7f8, #ffffff);
+    border-radius: 50px 0px 0px 50px;
+    transform: translateX(70%);
+    transition: transform 0.5s ease-out;
+}
+
+.mic:hover {
+    transform: translateX(0);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.contact {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4226b2;
+    letter-spacing: 1px;
+}
+
+.footer1 {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(-45deg, #5432dd, #2d86f8, #5432dd);
+    box-shadow: 0 -1px 10px 0px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #2d86f8;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer2 {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.copyright {
+    color: #85878c;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    font-family: Bahnschrift;
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .header-right {
+        padding-top: 65px;
+        margin: auto;
+    }
+
+    #current-time {
+        font-size: 14px;
+    }
+
+    .lang {
+        font-size: 12px;
+    }
+
+    .logo {
+        left: 18%;
+    }
+
+    section {
+        margin-top: 80px;
+    }
+
+    .here {
+        font-size: 14px;
+        left: 25%;
+        top: 220px;
+    }
+
+    .choose {
+        font-size: 16px;
+        right: 10%;
+        top: 190px;
+    }
+
+    .carsMiddle {
+        margin-top: -17%;
+    }
+
+    .login {
+        margin-top: 12px;
+        margin-left: 0px;
+    }
+
+    .btn {
+        margin-top: 2px;
+    }
+
+    .mic {
+        top: 220px;
+    }
+
+    .carsBottom {
+        grid-template-columns: 100%;
+        gap: 50px;
+        padding-top: 10px;
+        padding-bottom: 150px;
+    }
+
+}
